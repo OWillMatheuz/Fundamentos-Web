@@ -6,28 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://github.com/OWillMatheuz.png"/>
     <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="contato.html">CONTATO</a></li>
     </ul>
-    <h1>Entre em contato comigo !</h1>
 
-    <form>
-        <P> <label for="nome">Nome:</label> </p>
-            <input type="text" id="nome">
-        <p><label for="email">E-mail:</label></p>
-            <input type="text" id="email">
-        <p> <label for="assunto">Assunto:</label></p>
-            <textarea name="assuntoi" id="assunto" cols="60" rows="5"></textarea>
-        <br>    
-        <button>Enviar</button>
-    </form>
-    <h2>Endereço</h2>
-    <p>Rua Professor Vasco Raimundo de Brito</p>
-    <p>São Paulo - SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.6677031511613!2d-46.64004060201968!3d-23.472447925387318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef707aee273bb%3A0x991ca8fa8e07ff7e!2sR.%20Prof.%20Vasco%20Raimundo%20de%20Brito%20-%20Parque%20Mandaqui%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002422-210!5e0!3m2!1spt-BR!2sbr!4v1676565075898!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1 class="center">Entre em contato comigo !</h1>
+    <div class="container">
+        <div>
+            <form>
+                <h2>Mande uma mensagem:</h2>
+                <label for="nome">Nome:</label> 
+                   <input type="text" id="nome">
+       
+               <label for="email">E-mail:</label>
+                   <input type="text" id="email">
+       
+               <label for="assunto">Assunto:</label>
+                   <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+               <br>   
+               <button class="botao">Enviar</button>
+           </form>
+        </div>
+        <div class="ml-50">
+            <h2>Endereço</h2>
+            <p>Rua Professor Vasco Raimundo de Brito</p>
+            <p>São Paulo - SP</p>
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.6677031511613!2d-46.64004060201968!3d-23.472447925387318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef707aee273bb%3A0x991ca8fa8e07ff7e!2sR.%20Prof.%20Vasco%20Raimundo%20de%20Brito%20-%20Parque%20Mandaqui%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002422-210!5e0!3m2!1spt-BR!2sbr!4v1676565075898!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a target="_blank" href="https://www.linkedin.com/in/willian-matheus-3533617b/">
+            <img class="rede" src="assets/img/linkedin (1).png" alt="Logo linkedin">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/willmatheuz/">
+            <img class="rede" src="assets/img/instagram.png" alt="Logo instagram">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Will Matheus &copy
+        </p>
+    </footer>
 </body>
 </html>
