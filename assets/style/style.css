@@ -148,24 +148,27 @@ footer {
 }
 
 /* ! Configurações do contato */
-.contato {
+.contato .perfil {
   display: flex;
   gap: 3rem;
   justify-content: center;
 }
 
-.endereco {
+.endereco  {
   font-family: 'ABeeZee', sans-serif;
   color: var(--dark);
   font-size: 1.25rem;
+
 }
 
 .mapa {
   width: 35vw;
   aspect-ratio: 16/9;
-  border-radius: 8px;
+  border-radius: px;
   /* código hexadecimal normalmente é feito com 6 digitos.. aqui tem 8, sendo que os ultimos 2, é pra colocar transparencia */
-  box-shadow: 8px 8px 16px #4b324e88;
+  display:flex;
+
+
 }
 
 .formulario {
