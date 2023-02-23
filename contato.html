@@ -22,17 +22,20 @@
                 <form>
                   <div class="campos-form">
                     <label for="nome">Nome:</label>
-                    <input id="nome" name="nome" type="text" placeholder="Insira o seu nome completo">
+                    <input id="nome" name="nome" type="text" placeholder="Insira o seu nome ou seu apelido" onkeyup='validaNome()'>
+                    <div id="txtNome"></div>
                   </div>
                   <div class="campos-form">
                     <label for="email">E-mail:</label>
-                    <input id="email" name="email" type="text" placeholder="Insira o seu e-mail">
+                    <input id="email" name="email" type="text" placeholder="Insira o seu e-mail" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
                   </div>
                   <div class="campos-form">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="8" placeholder="Deixe sua mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="8" placeholder="Deixe sua mensagem" onkeyup="validaMensagem()"></textarea>
+                    <div id="txtMensagem"></div>
                   </div>
-                  <button type="submit">Enviar</button>
+                  <button onclick="enviar()" type="submit">Enviar</button>
                 </form>          
         </section>
         <section>
@@ -43,7 +46,7 @@
         <span>Parque Mandaqui - São Paulo</p>
       </div>
       <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.6677031511613!2d-46.64004060201968!3d-23.472447925387318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef707aee273bb%3A0x991ca8fa8e07ff7e!2sR.%20Prof.%20Vasco%20Raimundo%20de%20Brito%20-%20Parque%20Mandaqui%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002422-210!5e0!3m2!1spt-BR!2sbr!4v1676565075898!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.6677031511613!2d-46.64004060201968!3d-23.472447925387318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef707aee273bb%3A0x991ca8fa8e07ff7e!2sR.%20Prof.%20Vasco%20Raimundo%20de%20Brito%20-%20Parque%20Mandaqui%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002422-210!5e0!3m2!1spt-BR!2sbr!4v1676565075898!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapagoogle"></iframe>
       </div>
       </section>
     </main>
@@ -60,5 +63,6 @@
         Todos os direitos reservados: Will Matheus - 2023 &copy
     </p>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
