@@ -164,7 +164,7 @@ footer {
 .mapa {
   width: 35vw;
   aspect-ratio: 16/9;
-  border-radius: px;
+  border-radius: 8px;
   /* código hexadecimal normalmente é feito com 6 digitos.. aqui tem 8, sendo que os ultimos 2, é pra colocar transparencia */
   display:flex;
 
